@@ -1,0 +1,49 @@
+.sky{
+  color: #A9DCE1
+}
+.bg_sky{
+  background-color: #90c2f0
+}
+
+.mint{
+  color: #DAF0FA
+}
+.bg_mint{
+  background: #DAF0FA
+}
+.cherry{
+  color: #FF7555
+}
+.cherry_button{
+  color: #FF7555
+}
+/* .cherry_button:hover{
+  background-color: #eeeeee;
+} */
+.bg_cherry{
+  background: #FF7555
+}
+.bg_cherry_button{
+  background: #FF7555
+}
+.bg_cherry_button:hover{
+  background: #fd8266
+}
+.bg_cherry2{
+  background: #f5b1a2
+}
+.border_cherry{
+  border: #FF7555 5px solid;
+}
+#about {
+  scroll-margin-top: 64px; /* ヘッダーの高さ分、または適切な値に調整 */
+}
+#pricing {
+  scroll-margin-top: 64px; /* ヘッダーの高さ分、または適切な値に調整 */
+}
+#locations{
+  scroll-margin-top: 64px; /* ヘッダーの高さ分、または適切な値に調整 */
+}
+#faq{
+  scroll-margin-top: 64px; /* ヘッダーの高さ分、または適切な値に調整 */
+}
