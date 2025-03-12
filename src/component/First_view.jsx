@@ -4,12 +4,12 @@ import image1 from './image/洗車のサブスク2.png';
 
 function First_view() {
   return (
-    <div id="first" className="relative h-[700px] mt-16 overflow-hidden">
+    <div id="first" className="relative h-[500px] mt-16 overflow-hidden sm:h-[700px]">
       <img
         src={image1}
         alt="高級車の洗車"
-        className="w-[2200px] h-[800px] object-cover"
-      />
+        className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"
+        />
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h3 className="text-4xl sm:text-7xl font-bold mb-6 tracking-wide shadow-lg text-center">
