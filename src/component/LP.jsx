@@ -15,7 +15,6 @@ import How_use2 from './How_use2'
 import Machine from './Machine'
 
 function LP() {
-
   return (
     <>
     <Header/>
