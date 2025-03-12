@@ -74,6 +74,7 @@ function Regist_step() {
               <div className={`w-full md:w-1/3 flex justify-center ${index % 2 === 1 ? 'md:order-last' : ''}`}>
                 <div className="w-full max-w-[180px] aspect-[1.7/2.8]">
                   <img
+                  loading="lazy"
                     src={step.image}
                     alt={`Step ${step.number}`}
                     className="rounded-lg shadow-md w-full h-full object-cover"

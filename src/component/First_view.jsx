@@ -1,11 +1,12 @@
 import React from 'react';
 
-import image1 from './image/洗車のサブスク2.png';
+import image1 from './image/洗車のサブスク2.webp';
 
 function First_view() {
   return (
     <div id="first" className="relative h-[500px] mt-16 overflow-hidden sm:h-[700px]">
       <img
+      loading="eager"
         src={image1}
         alt="高級車の洗車"
         className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"

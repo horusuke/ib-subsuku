@@ -4,6 +4,7 @@ import silk from './image/シルキーコート.jpg'
 import tiara from './image/ティアラコート.jpg'
 import mokomoko from './image/もこもこ泡.png'
 import under from './image/下部洗浄.png'
+import '../App.css'
 
 
 function Menu() {
@@ -81,7 +82,7 @@ function Menu() {
   };
 
   return (
-<div className=" bg-gray-50 p-4 sm:p-6 md:p-8 bg_mint">
+<div className="  p-4 sm:p-6 md:p-8 bg_mint">
   <div className="max-w-6xl mx-auto">
     <h1 className="text-3xl font-bold text-gray-900 mb-8 ">メニュー</h1>
     <p className='bg_sky w-24 text-white text-lg mt-8 mb-8 rounded-sm text-center'>洗車メニュー</p>
@@ -102,7 +103,7 @@ function Menu() {
             </div>
             
             {/* 金額部分 */}
-            <span className="font-bold text-3xl text-gray-900 text-right ml-auto cherry">
+            <span className="font-bold text-3xl  text-right ml-auto cherry">
               {item.ammount}
             </span>
 
@@ -127,6 +128,7 @@ function Menu() {
               <div className="flex justify-center p-4">
                 <div className="w-full max-w-[400px] aspect-[6/3] overflow-hidden">
                   <img
+                  loading="lazy"
                     src={item.img}
                     alt={item.title}
                     className="w-full h-full object-cover rounded-lg shadow-md"
@@ -146,7 +148,7 @@ function Menu() {
       ))}
     </div>
 
-    <p className='bg_sky w-20 text-white text-lg mt-8 mb-8 rounded-sm text-center'>オプション</p>
+    <p className='bg_sky w-24 text-white text-lg mt-8 mb-8 rounded-sm text-center'>オプション</p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
 
 {optionItems.map((item) => (
@@ -164,7 +166,7 @@ function Menu() {
             </div>
             
             {/* 金額部分 */}
-            <span className="font-bold text-3xl text-gray-900 text-right ml-auto cherry">
+            <span className="font-bold text-3xl  text-right ml-auto cherry">
               {item.ammount}
             </span>
 
