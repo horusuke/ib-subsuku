@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://horusuke.github.io/ib-subsuku/",
+  "homepage": "https://ib-matubase-sabusuku.jp/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
