@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/ib-subsuku" element={<LP />} />
+        <Route path="/" element={<LP />} />
       </Routes>
     </Router>
 

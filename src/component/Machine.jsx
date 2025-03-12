@@ -12,6 +12,7 @@ function FeatureCard({ icon: Icon, title, description, imageUrl }) {
     <div className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="h-48 overflow-hidden">
         <img 
+        loading="lazy"
           src={imageUrl} 
           alt={title} 
           className="w-full h-full object-cover"
