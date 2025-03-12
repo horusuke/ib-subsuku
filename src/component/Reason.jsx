@@ -7,23 +7,27 @@ function Reason() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b82f6_0%,transparent_60%)] opacity-10"></div>
       <div className="container mx-auto px-4 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
-          <div className="flex-1 w-full">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 lg:text-left text-white">選ばれる4つの理由</h2>
-            <div className="space-y-6">
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-                <div className="text-left"> {/* Changed from text-center sm:text-left to just text-left */}
-                  <p className="text-gray-600 text-lg text-white">
-                     ・車の洗車に時間がかかって困っていませんか？
-                  </p>
-                  <p className="text-gray-600 text-lg text-white">
-                     ・また、ガソリン代が高くてお悩みではありませんか？
-                  </p>
-                  <p className="text-gray-600 text-lg text-white">
-                     ・さらに、高額なコーティング洗車に手が出しづらいと思っていませんか？
-                  </p>
-                  <p className="text-gray-600 text-lg text-white">
-                     ・そんなお悩みを解決する方法があります。
-                  </p>
+          <div className="flex-1 w-full flex justify-center">
+            <div className="w-full max-w-lg px-4"> 
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 lg:text-left text-white text-center">
+                選ばれる4つの理由
+              </h2>
+              <div className="space-y-6">
+                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+                  <div className="text-left w-full">
+                    <p className="text-gray-600 text-lg text-white ">
+                      ・車の洗車に時間がかかって困っていませんか？
+                    </p>
+                    <p className="text-gray-600 text-lg text-white ">
+                      ・また、ガソリン代が高くてお悩みではありませんか？
+                    </p>
+                    <p className="text-gray-600 text-lg text-white ">
+                      ・さらに、高額なコーティング洗車に手が出しづらいと思っていませんか？
+                    </p>
+                    <p className="text-gray-600 text-lg text-white ">
+                      ・そんなお悩みを解決する方法があります。
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
