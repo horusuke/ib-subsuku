@@ -10,7 +10,7 @@ function Regist_step() {
   const steps = [
     {
       number: "01",
-      title: "Wash WALLET アプリをダウンロード",
+      title: "wash WALLET アプリをダウンロード",
       description: (
         <>
           まずはアプリをダウンロードし、起動後に新規登録ボタンをタップして、
@@ -127,7 +127,7 @@ const AppRedirectButton = () => {
       onClick={handleRedirect}
       className="bg_cherry text-white px-6 py-2 rounded-full font-medium hover:bg_cherry2 transform hover:scale-105 transition-all duration-200 shadow-lg"
       >
-      Wash WALLETをダウンロード
+      wash WALLETをダウンロード
     </button>
   );
 };

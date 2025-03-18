@@ -23,7 +23,7 @@ function Explanation() {
     常に最高の状態に保ちます。
   </p>
   <p className="text-lg text-white">
-    Wash WALLET appを用いて洗車を行います。
+    wash WALLET appを用いて洗車を行います。
   </p>
 </div>
   </div>

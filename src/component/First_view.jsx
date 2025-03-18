@@ -54,7 +54,7 @@ const AppRedirectButton = () => {
       onClick={handleRedirect}
       className="bg_cherry_button hover:bg_cherry2 text-white font-bold py-4 px-8 rounded-full text-lg "
     >
-      Wash WALLETをダウンロード
+      wash WALLETをダウンロード
     </button>
   );
 };

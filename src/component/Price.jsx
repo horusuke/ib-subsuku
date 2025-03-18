@@ -228,7 +228,7 @@ const AppRedirectButton_price_blue = () => {
     <button
       onClick={handleRedirect}
       className="block w-full rounded-lg bg-blue-600 px-6 py-3 text-center text-sm font-semibold text-white hover:bg-blue-700"    >
-      Wash WALLETをダウンロード
+      wash WALLETをダウンロード
     </button>
   );
 };
@@ -251,7 +251,7 @@ const AppRedirectButton_price_sky = () => {
       onClick={handleRedirect}
       className="block w-full rounded-lg bg-blue-50 px-6 py-3 text-center text-sm font-semibold text-blue-600 hover:bg-blue-100"
     >
-      Wash WALLETをダウンロード
+      wash WALLETをダウンロード
     </button>
   );
 };
