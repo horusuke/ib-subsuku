@@ -55,6 +55,7 @@ function Header() {
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-600 hover:text-gray-900 focus:outline-none"
+                aria-label="メニューを開く"
               >
                 {isMenuOpen ? (
                   <X className="h-6 w-6" />
