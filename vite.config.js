@@ -4,9 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"/ib-subsuku",
-  build: {
-    outDir: 'docs',
-},
+  base:"/ib-subsuku/",
   
 })
