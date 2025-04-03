@@ -1,16 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import image1 from './image/洗車のサブスク2.webp';
 
 function First_view() {
+
+  useEffect(() => {
+    // プリロード用のリンク要素を作成
+    const link = document.createElement("link");
+    link.rel = "preload";
+    link.as = "image";
+    link.href = image1;
+
+    // head に追加
+    document.head.appendChild(link);
+
+    // クリーンアップ関数（必要なら削除）
+    return () => {
+      document.head.removeChild(link);
+    };
+  }, [image1]);
   return (
     <div id="first" className="relative h-[500px] mt-16 overflow-hidden sm:h-[700px]">
-      <img
+    <img
       loading="eager"
-        src={image1}
-        alt="高級車の洗車"
-        className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"
-        />
+      src={image1}
+      alt="高級車の洗車"
+      className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"
+    />
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h3 className="text-4xl sm:text-7xl font-bold mb-6 tracking-wide shadow-lg text-center">
