@@ -3,7 +3,7 @@ import { Shield, Droplets, Sparkles, Zap } from 'lucide-react';
 import sensor from '../component/image/sensor.png'
 import blush from '../component/image/blush.png'
 import coat from '../component/image/coat.png'
-import jet from '../component/image/jet.png'
+import jet from '../component/image/jet.webp'
 
 
 
@@ -34,7 +34,7 @@ function Machine() {
     {
       icon: Shield,
       title: "535本のセンサー",
-      description: "車形を読み取るセンサーの数が535本あるので洗い残しが少なく、完璧な洗浄を実現します。",
+      description: "車の形状を細部まで読み取る535本のセンサーで安全で洗い残しが少なく完璧な洗車を実現します。",
       imageUrl: sensor
     },
     {
@@ -52,7 +52,7 @@ function Machine() {
     {
       icon: Zap,
       title: "高圧ジェット",
-      description: "高圧ジェットが他の洗車機の威力と比較すると倍近くあり、頑固な汚れも簡単に落とします。",
+      description: "車の傷の原因は泥やほこりが付いたままの洗車。一般の洗車機の倍の威力のジェットで頑固な汚れも落とし、傷をつけない洗車を実現しました。",
       imageUrl: jet
     }
   ];

@@ -14,16 +14,17 @@ function First_view() {
       <div className="absolute inset-0 flex justify-center items-center">
         <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
           <h3 className="text-4xl sm:text-7xl font-bold mb-6 tracking-wide shadow-lg text-center">
-            <span className="sky">もこもこ</span>泡洗車<br />
+            <span className="sky">もこもこ</span>泡洗車が！<br />
           </h3>
           <h1 className="text-3xl sm:text-5xl font-bold mb-6 text-center">
-            <span className="sky">月々定額</span>で洗車し放題！
+            <span className="sky">ガラス系</span>の高級コーティングが！
+            <p><span className="sky">月々定額</span>で洗車し放題！！</p>
             {/* <span className="text-orange-600">2200円</span> ~ */}
           </h1>
           <h3 className="text-3xl sm:text-5xl font-bold mb-6 text-center">
             一カ月 
-            <span className="cherry text-5xl sm:text-7xl font-extrabold underline shadow-lg">
-              2200円～
+            <span className="cherry text-5xl sm:text-7xl font-extrabold shadow-lg">
+              1,650円～
             </span>
             <br />
           </h3>

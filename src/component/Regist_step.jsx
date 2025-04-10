@@ -31,7 +31,13 @@ function Regist_step() {
     {
       number: "03",
       title: "登録情報を入力",
-      description: "アカウントを作成するために、必要な個人情報を入力しましょう。",
+      description: (
+        <>
+          アカウントを作成するために、必要な個人情報を入力しましょう。
+          <br />
+          事業者コード：179396
+        </>
+      ),
       image: regist3,
     },
     {

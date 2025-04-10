@@ -13,23 +13,20 @@ function Reason() {
                 選ばれる4つの理由
               </h2>
               <div className="space-y-6">
-                <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
-                  <div className="text-left w-full">
-                    <p className="text-gray-600 text-lg text-white ">
-                      ・車の洗車に時間がかかって困っていませんか？
-                    </p>
-                    <p className="text-gray-600 text-lg text-white ">
-                      ・また、ガソリン代が高くてお悩みではありませんか？
-                    </p>
-                    <p className="text-gray-600 text-lg text-white ">
-                      ・さらに、高額なコーティング洗車に手が出しづらいと思っていませんか？
-                    </p>
-                    <p className="text-gray-600 text-lg text-white ">
-                      ・そんなお悩みを解決する方法があります。
-                    </p>
-                  </div>
-                </div>
-              </div>
+  <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+    <div className="text-left w-full">
+      <ul className="list-disc list-inside text-gray-600 text-lg text-white">
+        <li>暑い日、寒い日の洗車はつらくありませんか？</li>
+        <li>洗車に時間がかかり素早くきれいにしたいと思いませんか？</li>
+        <li>高額なガラスコーティングは手が出ないが安価なガラスコーティングがあればと思いませんか？</li>
+        <li>さらにガソリンさえも安くなったら最高だと思いませんか？</li>
+      </ul>
+      <p className="text-white text-2xl font-bold mt-4">
+        ・そんなお悩みを<span className='cherry2'>解決</span>する方法があります。
+      </p>
+    </div>
+  </div>
+</div>
             </div>
           </div>
           <div className="flex-1 w-full max-w-md lg:max-w-none">
