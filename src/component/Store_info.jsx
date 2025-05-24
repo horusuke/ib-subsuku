@@ -1,11 +1,12 @@
 import React from 'react';
 import { MapPin, Clock, Phone } from 'lucide-react';
-import matubashi from './image/matsubashi.png'
+import matubashi from './image/セルフステーション松橋北.webp'
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 const shops = [
   {
     id: 1,
-    name: "セルフステーション松橋北SS",
+    name: "セルフステーション松橋北",
     image: matubashi,
     address: "〒869-0502 熊本県宇城市松橋町松橋789-1",
     hours: "24時間",
@@ -13,7 +14,36 @@ const shops = [
   }
 ];
 
+const containerStyle = {
+  width: "100%",
+  height: "400px",
+};
+
+const center = {
+  lat: 32.65541076660156, // 熊本県宇城市松橋町松橋789-1 の緯度
+  lng: 130.68141174316406, // 熊本県宇城市松橋町松橋789-1 の経度
+};
+
+console.log('読み込み')
+
+const MyGoogleMap = () => {
+  return (
+    <div className="flex justify-center items-center p-4 bg-gray-100"> {/* マップコンテナの外装スタイル（Tailwind CSS） */}
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.1552898290656!2d130.67883807615405!3d32.655311490194876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540890c1e26d6a9%3A0x6235f331c870210b!2zYXBvbGxvc3RhdGlvbiDjgrvjg6vjg5Xmnb7mqYvljJdTU--8iOOCouOCpOODk-ODvOefs-ayue-8iQ!5e0!3m2!1sja!2sjp!4v1745380685812!5m2!1sja!2sjp"
+        style={{ width: "100%", height: "450px", border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  );
+};
+
+
+
 function Store_info() {
+  
   return (
     <div id='locations' className=" bg_sky p-6 pb-8">
       <div className="max-w-6xl mx-auto space-y-8">
@@ -66,6 +96,7 @@ function Store_info() {
             </div>
           ))}
         </div>
+        <MyGoogleMap/>
       </div>
     </div>
   );

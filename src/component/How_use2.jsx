@@ -1,13 +1,13 @@
 import React from 'react';
-import use1 from '../component/image/use1.png';
-import use2 from '../component/image/use2.png';
-import use3 from '../component/image/use3.png';
-import use4 from '../component/image/use4.png';
-import use5 from '../component/image/use5.png';
-import use6 from '../component/image/use6.png';
-import use7 from '../component/image/use7.png';
-import use8 from '../component/image/use8.png';
-import use9 from '../component/image/use9.png';
+import use1 from '../component/image/use1.webp';
+import use2 from '../component/image/use2.webp';
+import use3 from '../component/image/use3.webp';
+import use4 from '../component/image/use4.webp';
+import use5 from '../component/image/use5.webp';
+import use6 from '../component/image/use6.webp';
+import use7 from '../component/image/use7.webp';
+import use8 from '../component/image/use8.webp';
+import use9 from '../component/image/use9.webp';
 
 
 function How_use2() {

@@ -1,10 +1,10 @@
 import React from 'react';
-import buy1 from '../component/image/buy1.png';
-import buy2 from '../component/image/buy2.png';
-import buy3 from '../component/image/buy3.png';
-import buy4 from '../component/image/buy4.png';
-import buy5 from '../component/image/buy5.png';
-import buy6 from '../component/image/buy6.png';
+import buy1 from '../component/image/buy1.webp';
+import buy2 from '../component/image/buy2.webp';
+import buy3 from '../component/image/buy3.webp';
+import buy4 from '../component/image/buy4.webp';
+import buy5 from '../component/image/buy5.webp';
+import buy6 from '../component/image/buy6.webp';
 
 function buy_step() {
   const steps = [

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronDown, Coffee, Pizza, IceCream, Sandwich } from 'lucide-react';
-import silk from './image/シルキーコート.jpg'
-import tiara from './image/ティアラコート.jpg'
-import mokomoko from './image/もこもこ泡.png'
-import under from './image/下部洗浄.png'
+import silk from './image/シルキーコート.webp'
+import tiara from './image/ティアラコート.webp'
+import mokomoko from './image/もこもこ泡.webp'
+import under from './image/下部洗浄.webp'
 import '../App.css'
 
 

@@ -265,7 +265,8 @@ function Question() {
       question: "PayPayからwashWALLETへ戻らない",
       answer: (
         <>
-          <p>PayPayで決済が出来なかった場合は一度洗車受付をキャンセルし、再度受付操作を行ってください。</p>
+          <p>お使いの端末の設定や通信環境によってはPayPayでのお支払い完了後にwashWALLETへ戻らないことがございます。
+          washWALLETへ戻らなかった場合は、washWALLETアプリを開いてご利用ください。</p>
         </>
       )
     },

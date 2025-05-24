@@ -19,10 +19,6 @@ function Explanation() {
     高圧ジェットと柔らか布であなたの大切な愛車を常に最高できれいな状態を維持します
   </p>
   <p className="text-lg text-white">
-    プロによる丁寧な洗車で、あなたの大切な車を
-    常に最高の状態に保ちます。
-  </p>
-  <p className="text-lg text-white">
     {/* wash WALLET appを用いて洗車を行います。 */}
   </p>
 </div>

@@ -1,10 +1,12 @@
 import React from 'react';
-import regist1 from '../component/image/regist1.png';
-import regist2 from '../component/image/regist2.png';
-import regist3 from '../component/image/regist3.png';
-import regist4 from '../component/image/regist4.png';
-import regist5 from '../component/image/regist5.png';
-import regist6 from '../component/image/regist6.png';
+import ReactGA from "react-ga4";
+
+import regist1 from '../component/image/regist1.webp';
+import regist2 from '../component/image/regist2.webp';
+import regist3 from '../component/image/regist3.webp';
+import regist4 from '../component/image/regist4.webp';
+import regist5 from '../component/image/regist5.webp';
+import regist6 from '../component/image/regist6.webp';
 
 function Regist_step() {
   const steps = [
@@ -120,11 +122,26 @@ const AppRedirectButton = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       // iOS端末の場合
       window.location.href = "https://apps.apple.com/jp/app/wash-wallet-app/id1499473412";
+      setTimeout(window.location.href, 100);
+
     } else {
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       window.location.href =
         "https://play.google.com/store/apps/details?id=com.mkseiko.washwalletapp";
+        setTimeout(window.location.href, 100);
+
     }
   };
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Shield, Droplets, Sparkles, Zap } from 'lucide-react';
-import sensor from '../component/image/sensor.png'
-import blush from '../component/image/blush.png'
-import coat from '../component/image/coat.png'
-import jet from '../component/image/jet.webp'
+import sensor from '../component/image/sensor.webp'
+import blush from '../component/image/blush.webp'
+import coat from '../component/image/coat.webp'
+import jet from '../component/image/ジェット.webp'
 
 
 
@@ -34,7 +34,7 @@ function Machine() {
     {
       icon: Shield,
       title: "535本のセンサー",
-      description: "車の形状を細部まで読み取る535本のセンサーで安全で洗い残しが少なく完璧な洗車を実現します。",
+      description: "車の形状を細部まで読み取る535本のセンサーにより、安全で洗い残しが少なく完璧な洗車を実現します。",
       imageUrl: sensor
     },
     {
@@ -58,10 +58,10 @@ function Machine() {
   ];
 
   return (
-    <div className=" bg_mint">
+    <div className=" bg_sky">
       
       <main className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold text-center mb-12">洗車機について</h2>
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">洗車機について</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (

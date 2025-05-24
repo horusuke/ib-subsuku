@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import rogo from './image/アイビー石油ロゴ.png';
+import rogo from './image/アイビー石油ロゴ.webp';
 import '../App.css';
+import ReactGA from "react-ga4";
+
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +33,7 @@ function Header() {
             {/* デスクトップナビゲーション */}
             <nav className="hidden md:flex items-center space-x-8 text-sm">
               <a href="#about" className="text-gray-600 hover:text-blue-600 transition-colors">
-                洗車のサブスクとは
+                もこもこ泡洗車とは
               </a>
               <a href="#pricing" className="text-gray-600 hover:text-blue-600 transition-colors">
                 ご利用料金
@@ -75,7 +77,7 @@ function Header() {
                 onClick={closeMenu} // メニューを閉じる
                 className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors"
               >
-                洗車のサブスクとは
+                もこもこ泡洗車とは
               </a>
               <a
                 href="#pricing"
@@ -119,11 +121,22 @@ const AppRedirectButton = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       // iOS端末の場合
       window.location.href = "https://apps.apple.com/jp/app/wash-wallet-app/id1499473412";
+      setTimeout(window.location.href, 100);
     } else {
-      window.location.href =
-        "https://play.google.com/store/apps/details?id=com.mkseiko.washwalletapp";
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
+      window.location.href ="https://play.google.com/store/apps/details?id=com.mkseiko.washwalletapp";
+        setTimeout(window.location.href, 100);
     }
   };
 
@@ -142,11 +155,25 @@ const AppRedirectButton_mobile = () => {
     const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       // iOS端末の場合
       window.location.href = "https://apps.apple.com/jp/app/wash-wallet-app/id1499473412";
+      setTimeout(window.location.href, 100);
+
     } else {
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       window.location.href =
         "https://play.google.com/store/apps/details?id=com.mkseiko.washwalletapp";
+        setTimeout(window.location.href, 100);
+
     }
   };
 

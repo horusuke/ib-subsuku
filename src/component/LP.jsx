@@ -13,15 +13,19 @@ import Question from './Question'
 import Footer_info from './Footer_info'
 import How_use2 from './How_use2'
 import Machine from './Machine'
+import Instore from './Instore'
+import Onemonth_free from './onemonth_free'
 
 function LP() {
   return (
     <>
     <Header/>
     <First_view/>
+    <Onemonth_free/>
     <Explanation/>
     <Reason/>
     <Machine/>
+    <Instore/>
     <Price/>
     <Menu/>
     <Store_info/>

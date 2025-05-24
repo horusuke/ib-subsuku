@@ -1,34 +1,62 @@
 import React from 'react';
 
 import image1 from './image/洗車のサブスク2.webp';
+import ReactGA from "react-ga4";
+import tukiiti from './image/tukiiti.webp';
+import tukiiti_big from './image/tukiiti_big.webp';
+import price_img from './image/price_img.webp';
+
+
 
 function First_view() {
   return (
-    <div id="first" className="relative h-[500px] mt-16 overflow-hidden sm:h-[700px]">
-      <img
-      loading="eager"
-        src={image1}
-        alt="高級車の洗車"
-        className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"
-        />
-      <div className="absolute inset-0 flex justify-center items-center">
-        <div className="container mx-auto px-4 h-full flex flex-col justify-center items-center text-white">
-          <h3 className="text-4xl sm:text-7xl font-bold mb-6 tracking-wide shadow-lg text-center">
-            <span className="sky">もこもこ</span>泡洗車が！<br />
-          </h3>
-          <h1 className="text-3xl sm:text-5xl font-bold mb-6 text-center">
-            <span className="sky">ガラス系</span>の高級コーティングが！
-            <p><span className="sky">月々定額</span>で洗車し放題！！</p>
-            {/* <span className="text-orange-600">2200円</span> ~ */}
-          </h1>
-          <h3 className="text-3xl sm:text-5xl font-bold mb-6 text-center">
-            一カ月 
-            <span className="cherry text-5xl sm:text-7xl font-extrabold shadow-lg">
-              1,650円～
-            </span>
-            <br />
-          </h3>
-          <AppRedirectButton />
+
+    <div className=" bg-gray-100">
+      <div id="first" className="relative h-[500px] mt-16 overflow-hidden sm:h-[700px]">
+        {/* Background Image */}
+        <picture>
+          <img
+            loading="eager"
+            src={image1}
+            alt="Luxury Car Wash"
+            className="w-full max-w-[1800px] h-[500px] object-cover sm:w-full sm:max-w-[2200px] sm:h-[700px]"
+          />
+        </picture>
+  
+        {/* Overlay Image 1 */}
+        <div className="absolute inset-0 flex justify-center items-center">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcSet={tukiiti}
+            /> 
+            <img
+              src={tukiiti_big}
+              alt="Luxury Vehicle"
+              className="w-[400px] h-[400px] sm:w-[750px] sm:h-[750px] object-contain"
+              style={{ top: '15%', transform: 'translateY(-30%)' }}
+            />
+          </picture>
+        </div>
+  
+        {/* Overlay Image 2 */}
+        <div className="absolute inset-0 flex justify-center sm:justify-start items-center">
+          <img
+            src={price_img}
+            alt="Premium Service"
+            className="w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] object-contain relative sm:translate-x-[20%]"
+            style={{
+              top: '15%',
+              transform: 'translateY(-5%)',
+            }}
+          />
+        </div>
+  
+        {/* AppRedirectButton positioning - centered */}
+        <div className="absolute bottom-10 left-0 right-0 flex justify-center">
+          <div className="w-full max-w-xs px-4">
+            <AppRedirectButton className="w-full whitespace-nowrap" />
+          </div>
         </div>
       </div>
     </div>
@@ -43,8 +71,19 @@ const AppRedirectButton = () => {
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
       // iOS端末の場合
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click",
+        label: "app Redirect", // iOS向けのリンク
+      });
       window.location.href = "https://apps.apple.com/jp/app/wash-wallet-app/id1499473412";
     } else {
+      // Android端末の場合
+      ReactGA.event({
+        category: "App Redirect",
+        action: "download click", 
+        label: "app Redirect", 
+      });
       window.location.href =
         "https://play.google.com/store/apps/details?id=com.mkseiko.washwalletapp";
     }
@@ -53,7 +92,7 @@ const AppRedirectButton = () => {
   return (
     <button
       onClick={handleRedirect}
-      className="bg_cherry_button hover:bg_cherry2 text-white font-bold py-4 px-8 rounded-full text-lg "
+      className="bg_cherry_button hover:bg_cherry2 text-white font-bold py-4 px-8 rounded-full text-lg"
     >
       wash WALLETをダウンロード
     </button>

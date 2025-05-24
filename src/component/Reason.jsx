@@ -3,25 +3,25 @@ import React from 'react'
 
 function Reason() {
   return (
-    <div className="pt-10 pb-10 relative overflow-hidden bg_sky">
+    <div className="pt-10 pb-10 relative overflow-hidden bg_mint">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,#3b82f6_0%,transparent_60%)] opacity-10"></div>
       <div className="container mx-auto px-4 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-6xl mx-auto">
           <div className="flex-1 w-full flex justify-center">
             <div className="w-full max-w-lg px-4"> 
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 lg:text-left text-white text-center">
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 lg:text-left  text-center">
                 選ばれる4つの理由
               </h2>
               <div className="space-y-6">
   <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
     <div className="text-left w-full">
-      <ul className="list-disc list-inside text-gray-600 text-lg text-white">
+      <ul className="list-disc list-inside text-gray-600 text-lg ">
         <li>暑い日、寒い日の洗車はつらくありませんか？</li>
-        <li>洗車に時間がかかり素早くきれいにしたいと思いませんか？</li>
+        <li>洗車に時間がかかり、素早くきれいにしたいと思いませんか？</li>
         <li>高額なガラスコーティングは手が出ないが安価なガラスコーティングがあればと思いませんか？</li>
         <li>さらにガソリンさえも安くなったら最高だと思いませんか？</li>
       </ul>
-      <p className="text-white text-2xl font-bold mt-4">
+      <p className=" text-2xl font-bold mt-4">
         ・そんなお悩みを<span className='cherry2'>解決</span>する方法があります。
       </p>
     </div>
